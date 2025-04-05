@@ -7,6 +7,7 @@ Provides functions for converting currency between EUR and USD using a fixed exc
 EUR_TO_USD_RATE = 1.1  # 1 EUR = 1.1 USD
 USD_TO_EUR_RATE = 1 / EUR_TO_USD_RATE  # Approximately 0.90909 EUR per 1 USD
 
+
 def eur_to_usd(eur):
     """
     Convert Euros to US Dollars.
