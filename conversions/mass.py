@@ -16,3 +16,15 @@ def kg_to_lb(kg):
         float: Mass in pounds.
     """
     return kg * 2.20462
+
+def lb_to_kg(lb):
+    """
+    Convert pounds to kilograms.
+
+    Args:
+        lb (float): Mass in pounds.
+
+    Returns:
+        float: Mass in kilograms.
+    """
+    return lb / 2.20462
