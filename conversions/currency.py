@@ -26,3 +26,23 @@ def eur_to_usd(eur):
     except (ValueError, TypeError):
         raise ValueError("Input must be a numeric value.")
     return eur * EUR_TO_USD_RATE
+
+def usd_to_eur(usd):
+    """
+    Convert US Dollars to Euros.
+
+    Args:
+        usd (float or int): Amount in US Dollars.
+
+    Returns:
+        float: Equivalent amount in Euros.
+
+    Raises:
+        ValueError: If the input is not a numeric value.
+    """
+    try:
+        usd = float(usd)
+    except (ValueError, TypeError):
+        raise ValueError("Input must be a numeric value.")
+    return usd * USD_TO_EUR_RATE
+
