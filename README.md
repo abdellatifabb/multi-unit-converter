@@ -33,11 +33,8 @@ This project also serves as a learning platform for implementing best practices 
 
 3. **Test the some features:**
 
-   *** Celsius to Fahrenheit:*** 
-   python3 converter.py temp --mode c2f 20.0
-
-   *** Fahrenheit to Celsius ***
-   python3 converter.py temp --mode f2c 68.0
+   Celsius to Fahrenheit: python3 converter.py temp --mode c2f 20.0
+   Fahrenheit to Celsius: python3 converter.py temp --mode f2c 68.0
 
 
 
