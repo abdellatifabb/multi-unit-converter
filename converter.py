@@ -15,8 +15,9 @@ def main():
     distance = subparsers.add_parser('distance', help='Distance conversion')
 
     distance.add_argument('--mode', choices=['k2m','m2k'], required=True,
+                          help='Conversion mode: c2f (Celsius to Fahrenheit) or f2c (Fahrenheit to Celsius)')
+    distance.add_argument('value', type=float, help='Distance value to convert')
 
-main
     args = parser.parse_args()
 
     if args.command == 'temp':
