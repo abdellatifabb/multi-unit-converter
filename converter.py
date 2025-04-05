@@ -1,5 +1,6 @@
 import argparse
 from conversions.temperature import c_to_f, f_to_c
+from conversions.distance import km_to_miles, miles_to_km
 
 def main():
     parser = argparse.ArgumentParser(description="Multi-Unit Converter CLI")
@@ -20,8 +21,13 @@ def main():
         elif args.mode == 'f2c':
             result = f_to_c(args.value)
             print(f"{args.value}°F is {result:.2f}°C")
-    else:
-        parser.print_help()
+    elif args.command == 'distance':
+        if args.mode == "k2m":
+            result = km_to_miles(args.value)
+            print(f"{args.value} km is {result:.2f} miles")
+        elif args.mode == "m2k":
+            result = miles_to_km(args.value)
+            print(f"{args.value} miles is {result:.2f} km")
 
 if __name__ == "__main__":
     main()
