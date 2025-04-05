@@ -13,9 +13,10 @@ def main():
     temp_parser.add_argument('value', type=float, help='Temperature value to convert')
 
     distance = subparsers.add_parser('distance', help='Distance conversion')
-    distance.add_argument('--mode', choices=['k2m'], required=True,
-                          help='Conversion mode: k2m (Kilometers to Miles) or m2k (Miles to Kilometers)')
-    
+
+    distance.add_argument('--mode', choices=['k2m','m2k'], required=True,
+
+main
     args = parser.parse_args()
 
     if args.command == 'temp':
