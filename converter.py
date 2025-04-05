@@ -1,5 +1,5 @@
 import argparse
-from conversions.temperature import c_to_f, f_to_c
+from conversions.temperature import c_to_f
 
 def main():
     parser = argparse.ArgumentParser(description="Multi-Unit Converter CLI")
