@@ -25,8 +25,7 @@ def main():
                              help='Conversion mode: eur2usd (Euros to US Dollars) or usd2eur (US Dollars to Euros)')
     curr_parser.add_argument('value', type=float, help='Currency amount to convert')
 
-    # Mass conversion
-        # Mass conversion parser
+    # Mass conversion parser
     mass_parser = subparsers.add_parser('mass', help='Mass conversion')
     mass_parser.add_argument('--mode', choices=['kg2lb', 'lb2kg'], required=True,
                              help='Conversion mode: kg2lb (Kilograms to Pounds) or lb2kg (Pounds to Kilograms)')

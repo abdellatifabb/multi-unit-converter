@@ -17,9 +17,7 @@ This project also serves as a learning platform for implementing best practices 
 - **User-Friendly CLI**: Provides clear instructions and help options for users.
 - **Input Validation**: Ensures that user inputs are valid and provides helpful error messages.
 - **Modular Design**: Conversion logic is separated into distinct modules.
-- **Testing**: Includes unit tests for each conversion function.
 - **CI/CD Pipeline**: Automatically runs tests via GitHub Actions on each push or pull request.
-- **Session History (Optional)**: Maintains a log of conversion requests during a session.
 
 ## Getting Started
 
@@ -28,3 +26,18 @@ This project also serves as a learning platform for implementing best practices 
 1. **Clone the repository:**
 
    git clone https://github.com/yourusername/multi-unit-converter.git
+
+2. **Navigate to the folder:**
+
+   cd multi-unit-converter
+
+3. **Test the some features:**
+
+   *** Celsius to Fahrenheit:*** 
+   python3 converter.py temp --mode c2f 20.0
+
+   *** Fahrenheit to Celsius ***
+   python3 converter.py temp --mode f2c 68.0
+
+
+
