@@ -11,6 +11,10 @@ def main():
                              help='Conversion mode: c2f (Celsius to Fahrenheit) or f2c (Fahrenheit to Celsius)')
     temp_parser.add_argument('value', type=float, help='Temperature value to convert')
 
+    distance = subparsers.add_parser('distance', help='Distance conversion')
+    distance.add_argument('--mode', choices=['k2m'], required=True,
+                          help='Conversion mode: k2m (Kilometers to Miles) or m2k (Miles to Kilometers)')
+    
     args = parser.parse_args()
 
     if args.command == 'temp':
