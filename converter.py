@@ -12,11 +12,18 @@ def main():
                              help='Conversion mode: c2f (Celsius to Fahrenheit) or f2c (Fahrenheit to Celsius)')
     temp_parser.add_argument('value', type=float, help='Temperature value to convert')
 
+    # Distance conversion parser
     distance = subparsers.add_parser('distance', help='Distance conversion')
 
     distance.add_argument('--mode', choices=['k2m','m2k'], required=True,
                           help='Conversion mode: c2f (Celsius to Fahrenheit) or f2c (Fahrenheit to Celsius)')
     distance.add_argument('value', type=float, help='Distance value to convert')
+
+    # Currency conversion
+    curr_parser = subparsers.add_parser('curr', help='Currency conversion')
+    curr_parser.add_argument('--mode', choices=['eur2usd', 'usd2eur'], required=True,
+                             help='Conversion mode: eur2usd (Euros to US Dollars) or usd2eur (US Dollars to Euros)')
+    curr_parser.add_argument('value', type=float, help='Currency amount to convert')
 
     args = parser.parse_args()
 
